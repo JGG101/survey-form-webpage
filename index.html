@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1 id="title">SouLinGua Survey Form</h1>
+        <p id="description">Thank you for taking the time to fill out this form</p>
+
+        <form id="survey-form">
+            <fieldset>
+                <label for="name-label">Name <input type="text" name="name" id="name" placeholder="Enter your name" required></label>
+                <label for="email-label">Email <input type="email" name="email" id="email" placeholder="Enter your email" required></label>
+                <label for="age-label">Age <input type="number" name="age" id="number" min="10" max="50"></label>
+                <label for="phone-label">Phone <input type="tel" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="0123456789"></label>
+                <label for="gender-label"><input type="radio" name="gender" id="male" class="inline" checked> Male</label>
+                <label for="gender-label"><input type="radio" name="gender" id="female" class="inline"> Female</label>
+            </fieldset>
+
+            <fieldset>
+                <label for="favorite-instrument-label">
+                    What is your favorite music instrument?
+                    <select id="dropdown" class="box">
+                        <option value="">Select one</option>
+                        <option value="1">Guitar</option>
+                        <option value="2">Piano</option>
+                        <option value="3">Violin</option>
+                        <option value="4">Flute</option>
+                        <option value="5">Others</option>
+                    </select>
+                </label>
+
+                <label for="courses-label" class="courses">What courses would you like to take?</label>
+                <label for=""><input type="checkbox" name="courses" id="piano" class="inline"> Piano</label>
+                <label for=""><input type="checkbox" name="courses" id="guitar" class="inline"> Guitar</label>
+                <label for=""><input type="checkbox" name="courses" id="flute" class="inline"> Flute</label>
+                <label for=""><input type="checkbox" name="courses" id="vocal" class="inline"> Vocal</label>
+            </fieldset>
+
+            <!-- <fieldset>
+                <label for="">What courses would you like to take?</label>
+                <label for=""><input type="checkbox" name="courses" id="piano" class="inline"> Piano</label>
+                <label for=""><input type="checkbox" name="courses" id="guitar" class="inline"> Guitar</label>
+                <label for=""><input type="checkbox" name="courses" id="flute" class="inline"> flute</label>
+                <label for=""><input type="checkbox" name="courses" id="vocal" class="inline"> Vocal</label>
+            </fieldset> -->
+
+            <fieldset>
+                <label for="message">Message <textarea name="message" id="message" cols="30" rows="5" placeholder="Type your message here..."></textarea></label>
+            </fieldset>
+            <button id="Submit" type="submit">Submit</button>
+        </form>
+
+
+        
+    </body>
+</html>
